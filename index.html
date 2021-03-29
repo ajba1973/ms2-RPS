@@ -14,7 +14,15 @@
     <section class="principal" id="principal">
         <section id="container" class="container blue">
             <h1 class="animated2 bounce">WELCOME !!!!</h1>
-            
+            <form action="" id="form">
+                <input maxlength="10" required type="text" name="name" id="name" placeholder="Player's name">
+                <select name="gender" id="gender">
+                    <option required hidden selected>Boy / Girl</option>
+                    <option value="boy">Boy</option>
+                    <option value="girl">Girl</option>
+                </select>
+                <button class="animated pulse" onclick="getData()" type="button">PLAY !!!</button>
+            </form>
         </section>
     </section>
     
