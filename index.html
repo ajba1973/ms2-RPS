@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="shortcut icon" href="asset/images/juego.png" type="image/x-icon">
     <link rel="stylesheet" href="asset/css/styles.css">
 </head>
+
 <body>
     <!-- Landing page-->
     <section class="principal" id="principal">
@@ -49,18 +51,45 @@
     <div class="result">
         <p>Elige uno para empezar</p>
     </div>
+    <div id="gameContainer">
+        <div id="divTopScore">
+            <p style="margin: 0;" id="topScore">- Robot -</p>
+        </div>
+        <div id="divTopImage">
+            <img id="IAimg" src="asset/images/1.png" alt="IAplayer">
+        </div>
 
+        <h2>VS</h2>
+
+        <div id="divBottomImage">
+            <div id="selectImage">
+                <img id="piedra" class="btnSelDefault" onclick="comprobarResultado('piedra')" src="asset/images/1.png"
+                    alt="piedra">
+                <img id="papel" class="btnSelDefault" onclick="comprobarResultado('papel')" src="asset/images/2.png"
+                    alt="papel">
+                <img id="tijeras" class="btnSelDefault" onclick="comprobarResultado('tijeras')" src="asset/images/3.png"
+                    alt="tijeras">
+            </div>
+        </div>
+        <div id="divBottomScore">
+            <p style="margin: 0;">-Player-</p>
+        </div>
+    </div>
+    <!-- Banner Wins -->
+     <div id="btnRetryDiv" class="bannerHide">
+        <p id="btnRetry" style="margin: 0;" onclick="">Nueva partida</p>
+    </div>
     <!-- Footer section  -->
     <footer>
-         <!-- Info icons  -->
+        <!-- Info icons  -->
         <div>
-           
+
             <img id="btnInfo" src="https://img.icons8.com/material/24/000000/about.png" onclick="" alt="info">
             <div id="infoIcons" style="display: none">
                 <p>Alejandro Bastor 2021</p>
                 <p>All icons come from <a href="https://www.icons8.com">Icons8</a>.
-                </br>you can download from there.</p>
-                <p>'Pacifico'  <a href="https://fonts.google.com">Google Font</a>.</p>
+                    </br>you can download from there.</p>
+                <p>'Pacifico' <a href="https://fonts.google.com">Google Font</a>.</p>
             </div>
         </div>
         <!-- Botones para las redes sociales -->
@@ -72,6 +101,7 @@
         </div>
 
     </footer>
-    
+
 </body>
+
 </html>

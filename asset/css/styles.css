@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Grandstander, cursive;
+}
+
+body{    
+    min-height: 100vh;
+    color: white;
+    font-family: 'Grandstander', cursive;
+    background-image: linear-gradient( to top, #ABDCFF 0%, #0396FF 70%);
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+}
+/*------------------- Scoreboard */
+.marcador {
+    display: grid;
+    grid-template-columns: 1fr .5fr .3fr .5fr 1fr ;
+    grid-template-areas: "usuario score1 puntos score2 robot";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 2vw auto;
+    border: 3px solid white;
+    position: relative;
+    min-height: 20vw;
+    border-radius: 20px;
+    background-color: rgba(255,255,255, .1);
+}
+
+.sombra{
+    -webkit-box-shadow: -10px 10px 13px 0px rgba(0,0,0,0.19);
+    -moz-box-shadow: -10px 10px 13px 0px rgba(0,0,0,0.19);
+    box-shadow: -10px 10px 13px 0px rgba(0,0,0,0.19);
+}
+
+.user-label img{width: 90px;}
+.pc-label img{width: 90px;}
+.user-label {
+    grid-area: usuario;
+}
+
+#user-score{grid-area: score1;}
+.puntos {grid-area: puntos;}
+.pc-label{grid-area: robot;}
+span{font-size: 5vw;}
+
+.result, .play {
+    display: flex;
+    justify-content: center;
+    margin: 5vw 0;
+    font-size: 4vw;
+}
+
+#gameContainer {
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+#divTopScore, #divBottomScore {
+    font-size: 2em;
+    text-align: center;
+}
+
+#divTopImage, #divBottomImage {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
