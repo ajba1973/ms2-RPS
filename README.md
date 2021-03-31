@@ -17,6 +17,7 @@
     * [Typography](#typography)
     * [Wireframes](#wireframes)
 
+
 [**2. Features**](#2-features)
 - [2.1 Existing Features](#21-existing-features)
 - [2.2 Features Left to Implement](#22-future-features)
@@ -77,6 +78,10 @@ As a site developer, I would like the site to accomplish:
 ####   Typography
 
 ####   Wireframes
+
+The RPS (Rock Paper Scissors) game simply has two sections: a welcome page with an form to fill with the Player's name, Player's gender (Boy / Girl) and the colors to change the game area.
+
+- Wireframes for large screens and desktops: <a href= "assets/docs/wireframes/MS2-RPS-desktop.pdf" target="_blank"> Desktop View</a>
 
 ---
 
