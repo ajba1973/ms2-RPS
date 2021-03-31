@@ -12,3 +12,18 @@ const user_div = document.getElementById('player');
 const img_div = document.getElementById('img');
 const newGame_div = document.getElementById("newGame");
 
+// getData 
+function getData(){
+    const names = document.getElementById("name").value;
+    const genders = document.getElementById("gender").value;  
+    const colores = document.getElementById("color").value;  
+    document.getElementById('principal').classList.toggle('ocultar');
+    if(names == ''){user_div.innerHTML = 'Player';}
+    else{user_div.innerHTML = names;}
+    if(genders == 'girl'){img_div.innerHTML = '<img src="asset/images/girl.png" alt="Girl">';}
+    else{img_div.innerHTML = '<img src="asset/images/boy.png" alt="Boy">';}
+    if(colores == 'red'){document.getElementById('body').classList.add('red');}
+    else if(colores == 'black'){document.getElementById('body').classList.add('black');}
+    else if(colores == 'purple'){document.getElementById('body').classList.add('purple');}
+    else {document.getElementById('body').classList.add('blue');}
+}
