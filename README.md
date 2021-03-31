@@ -81,7 +81,7 @@ As a site developer, I would like the site to accomplish:
 
 The RPS (Rock Paper Scissors) game simply has two sections: a welcome page with an form to fill with the Player's name, Player's gender (Boy / Girl) and the colors to change the game area.
 
-- Wireframes for large screens and desktops: <a href= "asset/docs/wireframes/MS2-RPS-desktop.pdf" target="_blank"> Desktop View</a>
+- Wireframes for large screens and desktops: <a href= "asset/docs/ms2-RPS-desktop.pdf" target="_blank"> Desktop View</a>
 
 ---
 
