@@ -69,7 +69,41 @@ function draw(userChoice, computerChoice){
     document.getElementById('pc-label').classList.add('pulse');
 }
 
+function game(userChoice){
+    const computerChoice = getComputerChoice();
+    //const movidaUser = opcion;
+ 
+    switch (userChoice + computerChoice){
+        case "rs":
+        case "pr":
+        case "sp":
+            win(userChoice, computerChoice);
+            break;
+        case "rp":
+        case "ps":
+        case "sr":
+            lose(userChoice, computerChoice);
+            break;
+        case "rr":
+        case "pp":
+        case "ss":
+            draw(userChoice, computerChoice);
+            break;
+    }
+}
 
+function main(){
+    rock_div.addEventListener('click', () => game("r"));
+    paper_div.addEventListener('click', () => game("p"));
+    scissors_div.addEventListener('click', () => game("s"));
+}
+
+function reset() {
+    newGame_div.addEventListener("click", () => {userScore=0, pcScore=0, userScore_span.innerHTML = 0, pcScore_span.innerHTML = 0 } )
+}
+
+main();
+reset();
 
 
 
