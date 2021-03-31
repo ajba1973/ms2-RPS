@@ -50,3 +50,14 @@ function win(userChoice, computerChoice){
     document.getElementById('user-label').classList.add('pulse');
     document.getElementById('pc-label').classList.remove('pulse');
 }
+
+function lose(userChoice, computerChoice){
+    pcScore++;
+    pcScore_span.innerHTML = pcScore;
+    var mensaje2 = new SpeechSynthesisUtterance("You LOST !!!!!");
+    window.speechSynthesis.speak(mensaje2);
+    result_div.innerHTML = `${convertToWord(userChoice)} < ${convertToWord(computerChoice)}. You LOST 😓!!!`;
+    document.getElementById('user-label').classList.remove('pulse');
+    document.getElementById('pc-label').classList.add('pulse');
+}
+
