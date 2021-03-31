@@ -61,3 +61,28 @@ function lose(userChoice, computerChoice){
     document.getElementById('pc-label').classList.add('pulse');
 }
 
+function draw(userChoice, computerChoice){
+    result_div.innerHTML = `${convertToWord(userChoice)} = ${convertToWord(computerChoice)}. It's a DRAW 😛!!!`;
+    var mensaje3 = new SpeechSynthesisUtterance("It's a DRAW !!!!!");
+    window.speechSynthesis.speak(mensaje3);
+    document.getElementById('user-label').classList.add('pulse');
+    document.getElementById('pc-label').classList.add('pulse');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
