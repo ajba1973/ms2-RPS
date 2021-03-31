@@ -1,7 +1,7 @@
 # MS2 - Interactive Front End Milestone Project "RPS, Rock Paper Scissors"
 ![Image](To be filled)
 
-### View the live project [here.](To be filled)
+### View the live project [here.](https://ajba1973.github.io/ms2-RPS/index.html)
 
 ---
 
