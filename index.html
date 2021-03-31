@@ -55,37 +55,23 @@
         <span id="pc-score">0</span>
     </section>
     <!-- Message Screen-->
-    <div class="result">
-        <p>Elige uno para empezar</p>
+     <div class="result">
+        <p>Please select one, to start !!!!</p>
     </div>
-    <div id="gameContainer">
-        <div id="divTopScore">
-            <p style="margin: 0;" id="topScore">- Robot -</p>
+    <!-- Player' choices -->
+    <section class="choices">
+        <div class="choice shadow" id="r">
+            <img src="asset/images/rock.png" alt="Rock">
         </div>
-        <div id="divTopImage">
-            <img id="IAimg" src="asset/images/1.png" alt="IAplayer">
+        <div class="choice shadow" id="p">
+            <img src="asset/images/paper.png" alt="Paper">
         </div>
-
-        <h2>VS</h2>
-
-        <div id="divBottomImage">
-            <div id="selectImage">
-                <img id="piedra" class="btnSelDefault" onclick="comprobarResultado('piedra')" src="asset/images/1.png"
-                    alt="piedra">
-                <img id="papel" class="btnSelDefault" onclick="comprobarResultado('papel')" src="asset/images/2.png"
-                    alt="papel">
-                <img id="tijeras" class="btnSelDefault" onclick="comprobarResultado('tijeras')" src="asset/images/3.png"
-                    alt="tijeras">
-            </div>
+        <div class="choice shadow" id="s">
+            <img src="asset/images/scissors.png" alt="Scissors">
         </div>
-        <div id="divBottomScore">
-            <p style="margin: 0;">-Player-</p>
-        </div>
-    </div>
-    <!-- Banner Wins -->
-     <div id="btnRetryDiv" class="bannerHide">
-        <p id="btnRetry" style="margin: 0;" onclick="">Nueva partida</p>
-    </div>
+    </section>
+    <!-- Button reset game -->
+    <div id="newGame">New Game</div>
     <!-- Footer section  -->
     <footer>
         <!-- Info icons  -->
