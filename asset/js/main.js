@@ -27,3 +27,26 @@ function getData(){
     else if(colores == 'purple'){document.getElementById('body').classList.add('purple');}
     else {document.getElementById('body').classList.add('blue');}
 }
+
+function getComputerChoice() {
+    const choices = ['r', 'p', 's']
+    const randomNumber = Math.floor(Math.random() * 3);
+    return choices[randomNumber];
+}
+
+function convertToWord(letter){
+    if(letter === "r") return "Rock";
+    if(letter === "p") return "Paper";
+    return "Scissors";
+}
+
+function win(userChoice, computerChoice){
+    const userChoice_div = document.getElementById(userChoice);
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    var mensaje1 = new SpeechSynthesisUtterance("You WIN !!!!!");
+    window.speechSynthesis.speak(mensaje1);
+    result_div.innerHTML = `${convertToWord(userChoice)} > ${convertToWord(computerChoice)}. You WIN 😄!!!`;
+    document.getElementById('user-label').classList.add('pulse');
+    document.getElementById('pc-label').classList.remove('pulse');
+}
