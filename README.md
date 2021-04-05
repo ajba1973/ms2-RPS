@@ -1,5 +1,5 @@
 # MS2 - Interactive Front End Milestone Project "RPS, Rock Paper Scissors"
-![Image](/asset/docs/ms2RPT-amiresponsive.jpg)
+![Image](/asset/docs/ms2RPS-amiresponsive.jpg)
 
 ### View the live project [here.](https://ajba1973.github.io/ms2-RPS/index.html)
 
@@ -83,6 +83,11 @@ As a site developer, I would like the site to accomplish:
 
 - For this application I have not used images, but icons to create the different elements of the game such as buttons, markers, seeking attention as well as the fact that it is fun.
 
+**Icons**
+
+
+![image](/asset/docs/ms2RPS-icons.jpg)
+
 ####   Typography
 
 - I used Googlefonts to browse for suitable fonts to implement into the project and decided on **"Grandstander"** for all website. The creators of this font were inspired by the fonts used in children's books.While working on Grandstander we could see the "fun" come out in each glyph.
@@ -109,27 +114,35 @@ For this project, I decided to split the site into **two** sections, a landing a
         - Player's name, where the player can introduce his name, by default is "user". (By input method)
         - Player's Gender (Boy / Girl), the player can select boy or girl in the game an icon appear in the score board by default is boy.
         - Pick a color to change the background by default is blue.
-        - Play button that trigger the game with above data to fill different elements of the game.
+        - Play button that trigger the game with above data to fill different elements of the game page and sound message of "Rock, Paper, Scissors".
 
-    ![Image](To be filled)
+    ![Image](/asset/docs/ms2RPS-landing.jpg)
 
 - Game Page
     - A score board where feet the icons of player, robot (CPU), player, robot name and the score of the moves win each players.
     - Computer and navigation banner area, there are three buttons from left to right:
-        - A button to return to the landing page 
-        - A button where it animates the selection of the robot move 
+        - A button to return to the landing page. 
+        - A button where it animates the selection of the robot move. 
         - A help button "?" which launches a modal screen with the game rules. 
-    - Result banner where put the results the move and how win 
-    - The player can select one of the three icons (Rock, Paper or Scissors), in the players banner very intuitive.
-    - To be filled
-    - To be filled
+    - Result banner where the messages of the results of movements are collected, who wins the game, and game status.
+    - A player's grid can select one of the three icons (Rock, Paper or Scissors), it is very intuitive.
+    - New game button that appears when the game is finished to the best of 3 moves won.
+    - A footer with social icons and copyright
     ![Image](To be filled)
 
-    **Game Over Modal:**
-    ![image](To be filled)
+     **Scoreboard**
 
-    **Congratulations Modal:**
-    ![image](To be filled)
+    ![image](/asset/docs/ms2RPS-scoreboard.jpg)
+
+     **Gameboard**
+
+    ![image](/asset/docs/ms2RPS-gameboard.jpg)
+    
+    **Help Modal:**
+
+    ![image](/asset/docs/ms2RPS-modal.jpg)
+
+   
 
 ### 2.2 Features Left to Implement
 
@@ -167,7 +180,7 @@ A full testing report can be found in the [Testing Section](TESTING.md)
 
 The site was deployed to GitHub pages using these steps below:
 1. All code for this project was created in Gitpod, a local IDE (Integrated Development Environment)
-2. The code was pushed to Github stored in a [repository](to be fill)
+2. The code was pushed to Github stored in a [repository](https://github.com/ajba1973/ms2-RPS)
 3. Once in the repository, I selected "Settings" and scrolled down to the Github pages section.
 4. Under "Source" in the drop down, "Master-Branch" was selected.
 5. Following this, the site was then published to GitHub Pages and the site URL was displayed.
@@ -183,7 +196,7 @@ The site was deployed to GitHub pages using these steps below:
 
 If you would like to contribute to this project or have anything to add, you may fork the project using the following steps:
 -   Log on to [Github](https://github.com/) or create account and locate the Github repository.
--   Open the [repository](https://github.com/elerel/ms2-letsfly)
+-   Open the [repository](https://github.com/ajba1973/ms2-RPS)
 -   On the top right-hand of the page, click "Fork"
 -   You will now have a copy of your own of the repository in your own Github account.
 
