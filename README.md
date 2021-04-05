@@ -99,7 +99,7 @@ The RPS (Rock Paper Scissors) game simply has two sections: a welcome page with 
 And the game area that includes a scoreboard, computer moves and navigation buttons, results banner, player's buttons, a new game button that appears as soon as the game ends.
 
 - Wireframes for large screens and desktops: <a href= "asset/docs/wireframes/ms2RPS-computer.pdf" target="_blank"> Desktop View</a>
-- Wireframes for mobiles and tablets: <a href= "asset/docs/wireframes/ms2RPS-smart.pdf" target="_blank"> Desktop View</a>
+- Wireframes for mobiles and tablets: <a href= "asset/docs/wireframes/ms2RPS-smart.pdf" target="_blank"> Smart Devices View</a>
 
 ---
 
