@@ -3,69 +3,42 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Grandstander, cursive;
 }
 
 body{    
     min-height: 100vh;
-    color: white;
     font-family: 'Grandstander', cursive;
-    background-image: linear-gradient( to top, #ABDCFF 0%, #0396FF 70%);
-    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
 }
 
 /*------------------- Colors */
-
 .black {
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
 }
+
 .blue {
     background-image: linear-gradient( to top, #ABDCFF 0%, #0396FF 70%);
     background-repeat: no-repeat;
 }
+
 .red {
     background-image: linear-gradient(to top, #ff8a8a 0%, #f5576c 100%);
 }
+
 .purple {
     background-color: #0cbaba;
     background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 
-h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin: 0;
-}
-
-
-
-
-/*------------------- Nav */
-nav {
-    display: flex;
-    align-items: center;
-    width: 95%;
-    padding: 1vw 0;
-    margin: 0 auto;
-}
-nav img {
-    margin-right: 1vw;
-}
-
-nav h1 {
-    font-size: 2.5em;
-    /*margin-left: auto;
-    margin-right: auto;
-    padding: 10px; */
-}
-
-/*------------------- Scoreboard */
+/*---------------Scoreboard */
 .scoreboard {
     display: grid;
     grid-template-columns: 1fr .5fr .3fr .5fr 1fr ;
-    grid-template-areas: "user score1 puntos score2 cpu";
+    grid-template-areas: "user score1 puntos score2 robot";
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -76,9 +49,10 @@ nav h1 {
     min-height: 20vw;
     border-radius: 20px;
     background-color: rgba(255,255,255, .1);
+    color: white;
 }
 
-.shadow {
+.shadow{
     -webkit-box-shadow: -10px 10px 13px 0px rgba(0,0,0,0.19);
     -moz-box-shadow: -10px 10px 13px 0px rgba(0,0,0,0.19);
     box-shadow: -10px 10px 13px 0px rgba(0,0,0,0.19);
@@ -89,19 +63,58 @@ nav h1 {
 .user-label {
     grid-area: user;
 }
+
 #user-score{grid-area: score1;}
+
 .puntos {grid-area: puntos;}
+
 #pc-score{grid-area: score2;}
-.pc-label{grid-area: cpu;}
+
+.pc-label{grid-area: robot;}
+
 span{font-size: 5vw;}
 
+/*-------------Result banner */
 .result, .play {
     display: flex;
     justify-content: center;
     margin: 5vw 0;
     font-size: 4vw;
+    color: white;
 }
 
+/*----------Upper Grid */
+.choicesCpu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 2vw auto;
+}
+
+.choicesCpu div{
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: rgba(255,255,255, .1);;
+}
+.choicesCpu div:nth-of-type(1){
+    display: flex;
+    justify-self: left;
+}
+
+.choicesCpu div:nth-of-type(3){
+    display: flex;
+    justify-self: right;
+}
+
+.choicesCpu div img{
+    width: 80px;
+    padding: 2vw;
+}
+
+/*---------Game bottons */
 .choices{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -117,11 +130,11 @@ span{font-size: 5vw;}
     border: 3px solid white;
     background-color: rgba(255,255,255, .1);;
 }
-
 .choices div:nth-of-type(1){
     display: flex;
     justify-self: left;
 }
+
 .choices div:nth-of-type(3){
     display: flex;
     justify-self: right;
@@ -131,31 +144,21 @@ span{font-size: 5vw;}
     transform: scale(1.2);
     transition: 400ms all;
     cursor: pointer;
+    
 }
+
 .choices div img{
     width: 80px;
     padding: 2vw;
 }
 
-#newGame {
-    /*background: #c4da00;*/
+.btnSelDefault {
+    background: #49beb7;
     border-radius: 20px;
-    border: 3px solid white; 
-    width: 250PX;;
-    margin: 25px auto;
-    padding: 25px;
-    text-align: center;
-    /*font-family: Asap, sans-serif;*/
-    font-weight: bold;
-    font-size: 28px;
 }
 
-#newGame:hover {
-    cursor: pointer;
-    background: #0396FF;
-}
-
-.principal{
+/*------------Landing page */
+.main{
     position: relative;
     display: flex;
     align-content: center;
@@ -173,15 +176,19 @@ span{font-size: 5vw;}
 .ocultar {
     display: none;
 }
-.container h1 {
+
+.container h2 {
     font-size: 6vw;
+    color:white;
 }
+
 .container form{
     display: flex;
     flex-direction: column;
     width: 40%;
     margin: 0 auto;
 }
+
 input, select, button{
     padding: 1vw 1vw;
     border: 2px solid white;
@@ -190,7 +197,9 @@ input, select, button{
     margin-top: 30px;
     color: white;
     font-size: 1.4vw;
+    font-family: 'Grandstander', cursive;
 }
+
 ::-webkit-input-placeholder{
     font-size: 1.4vw;
     color: white;
@@ -202,77 +211,163 @@ button{
     color: #0396FF;
     font-size: 2vw;
 }
+
 option {
  font-size: 1.4vw;
  color: #0396FF;
  background-color: rgba(255,255,255, .1);
 }
 
+/*------------Animation */
 .animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.animated2 {
     animation-duration: 2.5s;
     animation-fill-mode: both;
-    animation-iteration-count: infinite;
-  }
-.animated2 {
-      animation-duration: 2.5s;
-      animation-fill-mode: both;
-      animation-iteration-count: initial;
-  }
-  
+    animation-iteration-count: initial;
+}
+
 input:focus, input.form-control:focus, button:focus {
-      outline:none !important;
-      outline-width: 0 !important;
-      box-shadow: none;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-  }
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-30px);}
     60% {transform: translateY(-15px);}
   }
+
   .bounce {
     animation-name: bounce;
   }
+
 @keyframes pulse {
     0% {transform: scale(1);}
     50% {transform: scale(1.05);}
     100% {transform: scale(1);}
 }
+
 .pulse {
 animation-name: pulse;
 animation-duration: 1s;
 }
 
-@media screen and (max-width: 700px){
-    nav h1 {
+/*----------New game boton */
+#btnRetry {
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
 
-        font-size: 1em; 
-    }
-    .container,.choices{
+#btnRetryDiv {
+    margin: 15px auto;
+    width: 400px;
+    text-align: center;
+    border: 3px solid #0396FF;
+    border-radius: 10px;
+}
+
+#btnRetryDiv:hover {
+    background-color: #0396FF;
+}
+
+.bannerShow {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.bannerHide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.2s, opacity 2s linear;
+}
+/*-------------Rules */
+#btnInfo{
+    background-color: transparent;   
+}
+
+#infoIcons{
+    background-color: #085f63;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    left: 5px;
+    bottom: 45px;
+    width: 90%;
+    height: 30%;
+    color: white;
+    margin: auto;
+}
+
+#socialContainer {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    align-content:center;
+    
+}
+
+@media screen and (max-width: 700px){
+    .scoreboard,.choices, .choicesCpu{
         width: 90%;
         margin: 10vw auto; 
     }
-    .choice div img{
+
+    .choicesCpu div img{
         width: 60px;
         padding: 1vw;
     }
+
+    .choices div img{
+        width: 60px;
+        padding: 1vw;
+    }
+
     .user-label img{width: 70px;}
     .pc-label img{width: 70px;}
     .container {
         padding-top: 25vw;  
-    }
+    } 
+
     .container h1 {
-        font-size: 10vw;
+        font-size: 7vw;
     }
+
     .container form{   
         width: 80%;   
     }
+
     input, select, button{
         padding: 4vw 1vw;       
     }
+
     ::-webkit-input-placeholder, button, select, option{
         font-size: 3vw; 
     }
+
+    #btnRetryDiv {
+        width: 80%;
+       
+    }
+
+    #socialContainer img{
+        width: 30px;
+    }
+    
 }
