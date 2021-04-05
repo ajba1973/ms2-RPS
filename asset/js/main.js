@@ -22,15 +22,15 @@ const divInfo = document.getElementById('infoIcons');
 function getData(){
     const names = document.getElementById("name").value;
     const genders = document.getElementById("gender").value;  
-    const colores = document.getElementById("color").value;  
+    const colors = document.getElementById("color").value;  
     document.getElementById('principal').classList.toggle('ocultar');
-    if(names == ''){user_div.innerHTML = 'Player';}
+    if(names == ''){user_div.innerHTML = 'user';}
     else{user_div.innerHTML = names;}
-    if(genders == 'girl'){img_div.innerHTML = '<img src="asset/images/girl.png" alt="Girl">';}
-    else{img_div.innerHTML = '<img src="asset/images/boy.png" alt="Boy">';}
-    if(colores == 'red'){document.getElementById('body').classList.add('red');}
-    else if(colores == 'black'){document.getElementById('body').classList.add('black');}
-    else if(colores == 'purple'){document.getElementById('body').classList.add('purple');}
+    if(genders == 'girl'){img_div.innerHTML = '<img src="asset/images/girl.png" alt="girl">';}
+    else{img_div.innerHTML = '<img src="asset/images/boy.png" alt="boy">';}
+    if(colors == 'red'){document.getElementById('body').classList.add('red');}
+    else if(colors == 'black'){document.getElementById('body').classList.add('black');}
+    else if(colors == 'purple'){document.getElementById('body').classList.add('purple');}
     else {document.getElementById('body').classList.add('blue');}
 }
 
