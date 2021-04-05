@@ -118,7 +118,18 @@ The base layer has big width that landing layer.
 
 ![image](/asset/docs/ms2RPS-chromedev.jpg)
 
-I update width and margin styles of these elements.
+I updated reduce the width and margin styles of these elements.
+
+## Remaining Bugs 
+
+-  ** Extra space that made extra space on small devices**
+
+Fill the gap between the color barckground in one of the players bottons and the border. 
+At the moment I'm still investigate to find a solution to fill this cosmetic issue.
+
+
+![image](/asset/docs/ms2RPS-bottonerr.jpg)
+
 
 
 
