@@ -1,5 +1,5 @@
 # MS2 - Interactive Front End Milestone Project "RPS, Rock Paper Scissors"
-![Image](To be filled)
+![Image](/asset/docs/ms2RPT-amiresponsive.jpg)
 
 ### View the live project [here.](https://ajba1973.github.io/ms2-RPS/index.html)
 
@@ -52,10 +52,12 @@
 
 ### 1.1 Overview
 
+This project has been commissioned by my young son. We are always playing "Rock, Paper, Scissors" from this fact I throw myself this challenge. 
+Fulfilling the following requirements that it was intuitive, simple, fun and could play on the mobile. Especially it had to meet this last specification.
 
 ### 1.2 Project Goals
 
-- To be filled
+Following my son's specifications, I created a rock-paper-scissors game for my second milestone project. When creating a fun and user-friendly game, I wanted to create a challenging but fun exercise; The big thrust of this project is to exercise as much Javascript learning practice as possible.
 
 ### 1.3 User Stories
 
