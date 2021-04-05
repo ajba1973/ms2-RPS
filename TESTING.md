@@ -110,6 +110,16 @@ I few phases of the implementation of the code when the html transfer data to th
 For debug this type errors I use console.log to check in the console tool in the Chrome devtool to spot where the implementation stopped.
 In all the cases was mispelling ID tags in the HTML code and the js varibles.
 
+-  ** Extra space that made extra space on small devices**
+Extra white space around the landing area. This issue is because I use z-index  to create a layers with  the different sections of the webpage.
+The base layer has big width that landing layer.
+
+![image](/asset/docs/ms2RPS-csserr.jpg)
+
+![image](/asset/docs/ms2RPS-chromedev.jpg)
+
+I update width and margin styles of these elements.
+
 
 
 ## Testing User Stories
