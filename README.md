@@ -63,28 +63,37 @@ Following my son's specifications, I created a rock-paper-scissors game for my s
 
 As a site user:
 - I want a site that is easy to navigate and play a game that is fun and interactive.
-- To be able to change game options, such as customizing it (Player's name, gender, background color)
+- To be able to change game options, such as customizing it (Player's name, gender, background color).
+- Very intuitive and very easy to use. ( For little kids).
+
 
 As a site developer, I would like the site to accomplish:
-- To be filled
+- Use elements to attract attention such as icons and sounds.
+- Incorporate animations to make the game more fun.
+- Play against the computer and have your movement reflected.
+- Implement a button to restart a new game when it has finished.
 
 ### 1.4 Design Process
 
 #### Colour Scheme
 
-![image](To be filled)
+- For the colors I have decided to use four of them (black, blue, red and purple). For each of them I have used linear-gradient to create different backgrounds that enhance the game environment, in addition to applying other effects such as background-blend-mode, back-ground repeat, or background-color.
 
 ####   Images
 
-![image](To be filled)
+- For this application I have not used images, but icons to create the different elements of the game such as buttons, markers, seeking attention as well as the fact that it is fun.
 
 ####   Typography
+
+- I used Googlefonts to browse for suitable fonts to implement into the project and decided on **"Grandstander"** for all website. The creators of this font were inspired by the fonts used in children's books.While working on Grandstander we could see the "fun" come out in each glyph.
 
 ####   Wireframes
 
 The RPS (Rock Paper Scissors) game simply has two sections: a welcome page with an form to fill with the Player's name, Player's gender (Boy / Girl) and the colors to change the game area.
+And the game area that includes a scoreboard, computer moves and navigation buttons, results banner, player's buttons, a new game button that appears as soon as the game ends.
 
 - Wireframes for large screens and desktops: <a href= "asset/docs/ms2-RPS-desktop.pdf" target="_blank"> Desktop View</a>
+- Wireframes for mobiles and tablets:
 
 ---
 
@@ -92,10 +101,10 @@ The RPS (Rock Paper Scissors) game simply has two sections: a welcome page with 
 
 ### 2.1 Existing Features
 
-For this project, I decided to split the site into **two** sections, a home page and a game page.
+For this project, I decided to split the site into **two** sections, a landing area and a game area.
 
-- Home Page
-    - To be filled
+- Landing area   
+    - It is a floating page that disappears when the start button is pressed. 
     - To be filled
     ![Image](To be filled)
 
@@ -128,12 +137,8 @@ For this project, I decided to split the site into **two** sections, a home page
 
 ### 3.2 Libraries:
 
--   [JQuery](https://jquery.com/) used to make the site interactive
--   [Bootstrap](https://getbootstrap.com/) used to help make the game responsive across all devices
 -   [Googlefonts](https://fonts.google.com/) used to source the font for the title of the game on both pages
 -   [Balsamiq](https://balsamiq.com/) used to create the wireframes during the "skeleton" phase of the project.
--   [Font Awesome](https://fontawesome.com/) used frequently to provide icons for the modals and game page.
-
 
 ##### Back to [Contents](#table-of-contents)
 
