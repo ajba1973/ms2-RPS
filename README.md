@@ -62,7 +62,8 @@ Following my son's specifications, I created a rock-paper-scissors game for my s
 ### 1.3 User Stories
 
 As a site user:
-- To be filled
+- I want a site that is easy to navigate and play a game that is fun and interactive.
+- To be able to change game options, such as customizing it (Player's name, gender, background color)
 
 As a site developer, I would like the site to accomplish:
 - To be filled
