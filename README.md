@@ -53,7 +53,7 @@
 ### 1.1 Overview
 
 This project has been commissioned by my young son. We are always playing "Rock, Paper, Scissors" from this fact I throw myself this challenge. 
-Fulfilling the following requirements that it was intuitive, simple, fun and could play on the mobile. Especially it had to meet this last specification.
+Fulfilling the following requirements that it was intuitive, simple, fun and could play on the mobile devices. Especially it had to meet this last specification.
 
 ### 1.2 Project Goals
 
@@ -62,12 +62,14 @@ Following my son's specifications, I created a rock-paper-scissors game for my s
 ### 1.3 User Stories
 
 As a site user:
+- A application that mobile, tablet use instead of laptop or desktop computer.
 - I want a site that is easy to navigate and play a game that is fun and interactive.
 - To be able to change game options, such as customizing it (Player's name, gender, background color).
 - Very intuitive and very easy to use. ( For little kids).
 
 
 As a site developer, I would like the site to accomplish:
+- As part a challange I build the application without use of libraries such as Bootstrap or Font Awesome.
 - Use elements to attract attention such as icons and sounds.
 - Incorporate animations to make the game more fun.
 - Play against the computer and have your movement reflected.
@@ -84,7 +86,6 @@ As a site developer, I would like the site to accomplish:
 - For this application I have not used images, but icons to create the different elements of the game such as buttons, markers, seeking attention as well as the fact that it is fun.
 
 **Icons**
-
 
 ![image](/asset/docs/ms2RPS-icons.jpg)
 
@@ -146,8 +147,10 @@ For this project, I decided to split the site into **two** sections, a landing a
 
 ### 2.2 Features Left to Implement
 
--   To be filled
--   To be filled
+-   Improve the visual appearance on large screens.  
+-   Implement the two player option.
+-   Select the number of moves to win the game.
+-   Implement "x" button to close modal screen.
 
 ---
 
@@ -163,6 +166,32 @@ For this project, I decided to split the site into **two** sections, a landing a
 
 -   [Googlefonts](https://fonts.google.com/) used to source the font for the title of the game on both pages
 -   [Balsamiq](https://balsamiq.com/) used to create the wireframes during the "skeleton" phase of the project.
+
+### 3.3 Version control
+
+-   [Git](https://git-scm.com/) used as the version control in utilising [Gitpod](https://www.gitpod.io/) to add code and commit to Git/push to Github.
+-   [Github](https://github.com/) used to store the code following being pushed from Git. 
+
+### 3.4 Tools and Other Resources:
+
+-   [AmIResponsive](http://ami.responsivedesign.is/) to check if the site is responsive across various devices
+-   [Autoprefixer CSS](https://autoprefixer.github.io/) used to check CSS browser compatibility.
+-   [Browserstack](https://www.browserstack.com/) used to check the responsiveness of project across a range of devices and browsers
+-   [CSS](https://css-tricks.com/)- handy guide used for css tips/questions
+-   [Youtube](https://www.youtube.com/) used as a very handy reference for online JS tutorials and refreshers on JS code learned from the course
+-   [Real Favicon Generator](https://realfavicongenerator.net/)- to create the sites favicon
+-   [W3 Schools](https://www.w3schools.com/) used as a general reference guide for CSS tips and Javascript function queries.
+-   [Beautifier](https://beautifier.io/) used to beautify all code for the project.
+-   [Stack Overflow](https://stackoverflow.com/) as a reference for several tips on ...
+-   [Markdown CheatSheet](https://www.markdownguide.org/cheat-sheet/) guide for refreshing memory on markdown use
+-   [MobiReady](https://ready.mobi/) used to check if the site is mobile responsive
+-   [Responsinator](https://www.responsinator.com/?url=https%3A%2F%2Fajba1973.github.io%2Fms2-RPS%2Findex.html) used to check how the responsive the design of the project was across different devices.
+-   [Unused-CSS](https://unused-css.com/)- a helpful tool to check for any unused CSS
+
+### 3.4 Code Resources:
+- [Web Development Tutorial - JavaScript, HTML, CSS - Rock Paper Scissors Game](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=413s) on how to build a Rock, Paper, Scissors Game by [whatsdev] (https://www.youtube.com/channel/UC0tRdbXVDbhaRvZPKsRgmxg)
+- [carloscdev/PiedraPapelTijera](https://github.com/carloscdev/PiedraPapelTijera) for giving me the foundation stone to be able to develop and implement my idea.
+- [What-the-JS](https://www.ci-resources.online/js.html) by Jim Morel
 
 ##### Back to [Contents](#table-of-contents)
 
@@ -212,14 +241,13 @@ All content is written by the developer, Alejandro Bastor-Alvarez.
 
 ### 7.2 Media
 
--   To be fill
--   To be fill
+-   All icons come from [icon8](https://www.icons8.com)
+-   Grandstander font by Tyler Finck (https://fonts.google.com/specimen/Grandstander?query=grand#about) 
 
 ### 7.3 Code
 
--   Scotch.io [tutorial](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating) on how to display a star rating for the game 
--   [Stackoverflow](https://stackoverflow.com/questions/46458740/starting-timer-when-clicking-first-card-of-memory-game) on how to begin timer on first card click of the game
--   Bootstrap: [Modals](https://getbootstrap.com/docs/4.0/components/modal/) code snippets from Bootstrap Modals for use of modals in both index page and game page
+-   whatsdev [tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=413s) on how to build a Rock, Paper Scissors game. 
+-   Carlos Cordova (https://github.com/carloscdev/PiedraPapelTijera) For giving me the foundation stone to be able to develop and implement my idea.
 
 ### 7.4 Acknowledgements
 
