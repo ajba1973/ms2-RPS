@@ -14,28 +14,31 @@
 
 <body id="body" class="">
    <!--Landing page-->
-    <section class="principal" id="principal">
-        <section id="container" class="container blue">
-            <form action="" id="form">
-            <h1 class="animated2 bounce">WELCOME !!!!</h1>
-            <input maxlength="10" required type="text" name="name" id="name" placeholder="Player's name">
-            <select name="gender" id="gender">
-                <option required hidden selected>Boy / Girl</option>
-                <option value="boy">Boy</option>
-                <option value="girl">Girl</option>
-            </select>
-            <select name="color" id="color">
-                <option required hidden selected>Please select a color</option>
-                <option value="blue">Blue</option>
-                <option value="red">Red</option>
-                <option value="black">Black</option>
-                <option value="purple">Purple</option>
-            </select>
-            <button class="animated pulse" onclick="getData()" type="button">PLAY !!!</button>
-        </form>
-        </section>
-    </section>
-    <!-- Game page-->
+   <section class="main" id="principal">
+        <div id="box" class="container blue">
+            <div class="animated2 bounce">
+                <h2>Welcome to...
+                <br>ROCK, PAPER, SCISSORS !!!</h2>
+            </div>
+            <form id="form">
+                <input maxlength="10" required type="text" name="name" id="name" placeholder="Your Name...">
+                <select name="gender" id="gender">
+                    <option hidden selected>Boy / Girl</option>
+                    <option value="boy">Boy</option>
+                    <option value="girl">Girl</option>
+                </select>
+                <select name="color" id="color">
+                    <option hidden selected>Pick a color</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="black">Black</option>
+                    <option value="purple">Purple</option>
+                </select>
+                <button class="animated pulse" onclick="getData()" type="button">PLAY !!!!</button>
+            </form>
+        </div>
+    </section> 
+   <!-- Game page-->
     <!-- Header-->
     <header>
         <nav>
