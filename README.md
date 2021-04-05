@@ -105,11 +105,22 @@ For this project, I decided to split the site into **two** sections, a landing a
 
 - Landing area   
     - It is a floating page that disappears when the start button is pressed. 
-    - To be filled
+    - For customization of the game by the player:
+        - Player's name, where the player can introduce his name, by default is "user". (By input method)
+        - Player's Gender (Boy / Girl), the player can select boy or girl in the game an icon appear in the score board by default is boy.
+        - Pick a color to change the background by default is blue.
+        - Play button that trigger the game with above data to fill different elements of the game.
+
     ![Image](To be filled)
 
 - Game Page
-    - To be filled
+    - A score board where feet the icons of player, robot (CPU), player, robot name and the score of the moves win each players.
+    - Computer and navigation banner area, there are three buttons from left to right:
+        - A button to return to the landing page 
+        - A button where it animates the selection of the robot move 
+        - A help button "?" which launches a modal screen with the game rules. 
+    - Result banner where put the results the move and how win 
+    - The player can select one of the three icons (Rock, Paper or Scissors), in the players banner very intuitive.
     - To be filled
     - To be filled
     ![Image](To be filled)
