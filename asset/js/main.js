@@ -152,6 +152,37 @@ function retry() {
 }
 
 
+//New Game Button - resat score
+btnRetry.onclick = function () {
+    IAScore = 0;
+    PlayerScore = 0;
+
+    scoreIA.innerHTML = IAScore + "";
+    scorePlayer.innerHTML = PlayerScore + "";
+
+    btnRetry.classList.remove('bannerShow');
+    btnRetry.classList.add('bannerHide');
+
+    retry();
+};
+
+//Show game's rules
+let infoAbierta = false;
+
+btnInfo.onclick = function () {
+    infoAbierta = !infoAbierta;
+
+    console.log(infoAbierta);
+    if (infoAbierta) {
+        //Hide rules
+        divInfo.style.display = 'block';
+    } else {
+        //Show rules
+        divInfo.style.display = 'none';
+    }
+}; 
+
+
 
 
 
