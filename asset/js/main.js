@@ -132,7 +132,24 @@ function checkResult(playerElection) {
     }
 }
 
+//New Game Bannner
+function retry() {
+    if (IAScore === maxJugadas || PlayerScore === maxJugadas) {
+        if (IAScore === maxJugadas) {
+            infoText.innerHTML = 'YOU LOST THE GAME! 😥';
+        } else {
+            infoText.innerHTML = 'YOU WIN THE GAME!!! 😄';
+        }
+        btnRetry.classList.remove('bannerHide');
+        btnRetry.classList.add('bannerShow');
 
+    } else {
+        infoText.innerHTML = 'Waiting... 🤔';
+
+        onGame = true;
+        intervalAnimation = setInterval(enemyAnimation, 50);
+    }
+}
 
 
 
