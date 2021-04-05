@@ -88,7 +88,6 @@ The only issues that showed in the JShint report were the use of 'let', 'const' 
 -   [LightHouse Report:](https://developers.google.com/web/tools/lighthouse)
 ![image](/asset/docs/ms2RPS-light.jpg)
 
-
 ---
 
 - [AmIResponsiveDesign](http://ami.responsivedesign.is/#)
@@ -100,6 +99,18 @@ The only issues that showed in the JShint report were the use of 'let', 'const' 
 All appeared as normal in Responsinator, apart the game is designed to play in portait position instead of landscape that will be update in new revisions.
 
 ---
+
+## Project Bugs and Solutions
+
+-  **Uncaught TypeError: Cannot reapoperty 'classList' of null**
+I few phases of the implementation of the code when the html transfer data to the javasript functions that back null.
+
+![image](/asset/docs/ms2RPS-errorjs.jpg)
+
+For debug this type errors I use console.log to check in the console tool in the Chrome devtool to spot where the implementation stopped.
+In all the cases was mispelling ID tags in the HTML code and the js varibles.
+
+
 
 ## Testing User Stories
 
