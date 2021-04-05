@@ -62,7 +62,7 @@ Following my son's specifications, I created a rock-paper-scissors game for my s
 ### 1.3 User Stories
 
 As a site user:
-- A application that mobile, tablet use instead of laptop or desktop computer.
+- A application to play on a mobile, tablet devices instead of laptop or desktop computer.
 - I want a site that is easy to navigate and play a game that is fun and interactive.
 - To be able to change game options, such as customizing it (Player's name, gender, background color).
 - Very intuitive and very easy to use. ( For little kids).
