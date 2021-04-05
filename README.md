@@ -253,6 +253,7 @@ All content is written by the developer, Alejandro Bastor-Alvarez.
 
 For this project, my sincere thanks goes out to:
 - My mentor, **Nishant Kumar** for his relentless support and guidance given throughout this time.
+- Carlos Cordova, the Whatdev you tube channel and other youtubers for dedication in teaching and showing new forms of collaboration.
 - The Slack Community, and Jim Morel for his very useful site "What the JS" which was incredibly helpful
 - Code Institute Student Care for their guidance in the past few weeks
 - My wife for his support and patience, and my little troublemaker Morgan, encouraging me to finish his game.
