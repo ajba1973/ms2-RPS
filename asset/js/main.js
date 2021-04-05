@@ -1,16 +1,22 @@
-let userScore = 0;
-let pcScore = 0;
+//Initialize scores & user choice
+let onGame = true;
+let IAScore = 0;
+let PlayerScore = 0;
+const maxJugadas = 3;
 // Cache DOM
-const userScore_span = document.getElementById('user-score');
-const pcScore_span = document.getElementById('pc-score');
-const scoreBoard_div = document.querySelector('scoreboard');
-const result_div = document.querySelector('.result p');
-const rock_div = document.getElementById('r');
-const paper_div = document.getElementById('p');
-const scissors_div = document.getElementById('s');
-const user_div = document.getElementById('player'); 
+const user_div = document.getElementById('user'); 
 const img_div = document.getElementById('img');
 const newGame_div = document.getElementById("newGame");
+const rock = document.getElementById('rock');
+const paper = document.getElementById('paper');
+const scissors = document.getElementById('scissors');
+const scoreIA = document.getElementById('pc-score');
+const scorePlayer = document.getElementById('user-score');
+const infoText = document.getElementById('infoText');
+const btnRetry = document.getElementById('btnRetryDiv');
+const btnInfo = document.getElementById('btnInfo');
+const divInfo = document.getElementById('infoIcons');
+    
 
 // getData 
 function getData(){
