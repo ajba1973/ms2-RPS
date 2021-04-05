@@ -78,18 +78,19 @@
     <section class="result">
         <h2 id="infoText">Click on Rock, Paper or Scissors...</h2>
     </section>
-    <!-- Player' choices -->
-    <section class="choices">
-        <div class="choice shadow" id="r">
-            <img src="asset/images/rock.png" alt="Rock">
+    <!-- Player board-->
+    <div class="choices">
+        <div class="choice shadow" id="rock">
+            <img id="piedra" class="btnSelDefault" onclick="checkResult('rock')" src="asset/images/1.png" alt="rock">
         </div>
-        <div class="choice shadow" id="p">
-            <img src="asset/images/paper.png" alt="Paper">
+        <div class="choice shadow btnSelDefault" id="paper">
+            <img id="papel" class="btnSelDefault" onclick="checkResult('paper')" src="asset/images/2.png" alt="paper">
         </div>
-        <div class="choice shadow" id="s">
-            <img src="asset/images/scissors.png" alt="Scissors">
+        <div class="choice shadow" id="scissors">
+            <img id="tijeras" class="btnSelDefault" onclick="checkResult('scissors')" src="asset/images/3.png"
+                alt="scissors">
         </div>
-    </section>
+    </div>
     <!-- Button reset game -->
     <div id="newGame">New Game</div>
      <section class="colors">
