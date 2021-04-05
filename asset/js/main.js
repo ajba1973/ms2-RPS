@@ -34,45 +34,27 @@ function getData(){
     else {document.getElementById('body').classList.add('blue');}
 }
 
-function getComputerChoice() {
-    const choices = ['r', 'p', 's']
-    const randomNumber = Math.floor(Math.random() * 3);
-    return choices[randomNumber];
-}
+//Computers effects
+const imagenes = {
+    0: "asset/images/1.png",
+    1: "asset/images/2.png",
+    2: "asset/images/3.png",
+};
 
-function convertToWord(letter){
-    if(letter === "r") return "Rock";
-    if(letter === "p") return "Paper";
-    return "Scissors";
-}
+Object.size = function (obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
 
-function win(userChoice, computerChoice){
-    const userChoice_div = document.getElementById(userChoice);
-    userScore++;
-    userScore_span.innerHTML = userScore;
-    var mensaje1 = new SpeechSynthesisUtterance("You WIN !!!!!");
-    window.speechSynthesis.speak(mensaje1);
-    result_div.innerHTML = `${convertToWord(userChoice)} > ${convertToWord(computerChoice)}. You WIN 😄!!!`;
-    document.getElementById('user-label').classList.add('pulse');
-    document.getElementById('pc-label').classList.remove('pulse');
-}
+let imagenesLength = Object.size(imagenes);
+let intervalAnimation = setInterval(enemyAnimation, 100);
 
-function lose(userChoice, computerChoice){
-    pcScore++;
-    pcScore_span.innerHTML = pcScore;
-    var mensaje2 = new SpeechSynthesisUtterance("You LOST !!!!!");
-    window.speechSynthesis.speak(mensaje2);
-    result_div.innerHTML = `${convertToWord(userChoice)} < ${convertToWord(computerChoice)}. You LOST 😓!!!`;
-    document.getElementById('user-label').classList.remove('pulse');
-    document.getElementById('pc-label').classList.add('pulse');
-}
-
-function draw(userChoice, computerChoice){
-    result_div.innerHTML = `${convertToWord(userChoice)} = ${convertToWord(computerChoice)}. It's a DRAW 😛!!!`;
-    var mensaje3 = new SpeechSynthesisUtterance("It's a DRAW !!!!!");
-    window.speechSynthesis.speak(mensaje3);
-    document.getElementById('user-label').classList.add('pulse');
-    document.getElementById('pc-label').classList.add('pulse');
+function enemyAnimation() {
+    cont = Math.floor(Math.random() * 3);
+    IAimg.src = imagenes[cont];
 }
 
 function game(userChoice){
