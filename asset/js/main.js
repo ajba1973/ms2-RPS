@@ -57,41 +57,82 @@ function enemyAnimation() {
     IAimg.src = imagenes[cont];
 }
 
-function game(userChoice){
-    const computerChoice = getComputerChoice();
-    //const movidaUser = opcion;
- 
-    switch (userChoice + computerChoice){
-        case "rs":
-        case "pr":
-        case "sp":
-            win(userChoice, computerChoice);
-            break;
-        case "rp":
-        case "ps":
-        case "sr":
-            lose(userChoice, computerChoice);
-            break;
-        case "rr":
-        case "pp":
-        case "ss":
-            draw(userChoice, computerChoice);
-            break;
+// Player move
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function checkResult(playerElection) {
+
+    let state = "";
+
+    clearInterval(intervalAnimation);
+
+    let choices = {
+        'rock': 0,
+        'paper': 1,
+        'scissors': 2
+    };
+
+    if (onGame) {
+        if (choices[playerElection] > cont) {
+            if (choices[playerElection] === 2 && cont === 0) {
+                console.log('rock Gana - IA');
+                state = '¡Rock Wins! 😥';
+                IAScore++;
+            } else {
+                if (choices[playerElection] === 1) {
+                    state = '¡Paper wins! 😄';
+                    PlayerScore++;
+                } else {
+                    state = '¡Scissors wins! 😄';
+                    PlayerScore++;
+                }
+            }
+        } else if (choices[playerElection] < cont) {
+            if (choices[playerElection] === 0 && cont === 2) {
+                console.log('rock Gana - Jugador');
+                state = '¡Rock Wins! 😄';
+                PlayerScore++;
+            } else {
+                if (choices[playerElection] === 1) {
+                    state = '¡Scissors wins! 😥';
+                    IAScore++;
+                } else {
+                    state = '¡Paper wins! 😥';
+                    IAScore++;
+                }
+            }
+        } else {
+            console.log('Empate');
+            state = 'DRAW!!! 😛';
+        }
+        scoreIA.innerHTML = IAScore + "";
+        scorePlayer.innerHTML = PlayerScore + "";
+
+        async function retryNow() {
+            infoText.classList.remove('infoText');
+            infoText.classList.add('infoTextSel');
+            await sleep(500);
+            infoText.innerHTML = state;
+            infoText.classList.remove('infoTextSel');
+            infoText.classList.add('infoText');
+            await sleep(2500);
+            infoText.classList.remove('infoText');
+            infoText.classList.add('infoTextSel');
+            await sleep(500);
+            retry();
+            infoText.classList.remove('infoTextSel');
+            infoText.classList.add('infoText');
+        }
+
+        retryNow();
+
+        onGame = false;
     }
 }
 
-function main(){
-    rock_div.addEventListener('click', () => game("r"));
-    paper_div.addEventListener('click', () => game("p"));
-    scissors_div.addEventListener('click', () => game("s"));
-}
 
-function reset() {
-    newGame_div.addEventListener("click", () => {userScore=0, pcScore=0, userScore_span.innerHTML = 0, pcScore_span.innerHTML = 0 } )
-}
-
-main();
-reset();
 
 
 
