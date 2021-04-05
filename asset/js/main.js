@@ -22,7 +22,8 @@ const divInfo = document.getElementById('infoIcons');
 function getData(){
     const names = document.getElementById("name").value;
     const genders = document.getElementById("gender").value;  
-    const colors = document.getElementById("color").value;  
+    const colors = document.getElementById("color").value;
+    var mensaje = new SpeechSynthesisUtterance("Rock, Paper, Scissors !!!!!");  
     document.getElementById('principal').classList.toggle('ocultar');
     if(names == ''){user_div.innerHTML = 'user';}
     else{user_div.innerHTML = names;}
@@ -32,6 +33,7 @@ function getData(){
     else if(colors == 'black'){document.getElementById('body').classList.add('black');}
     else if(colors == 'purple'){document.getElementById('body').classList.add('purple');}
     else {document.getElementById('body').classList.add('blue');}
+    window.speechSynthesis.speak(mensaje);
 }
 
 //Computers effects
@@ -77,7 +79,6 @@ function checkResult(playerElection) {
     if (onGame) {
         if (choices[playerElection] > cont) {
             if (choices[playerElection] === 2 && cont === 0) {
-                console.log('rock Gana - IA');
                 state = '¡Rock Wins! 😥';
                 IAScore++;
             } else {
@@ -133,11 +134,15 @@ function checkResult(playerElection) {
 }
 
 //New Game Bannner
+var mensaje1 = new SpeechSynthesisUtterance("You WIN !!!!!");
+var mensaje2 = new SpeechSynthesisUtterance("You LOST !!!!!");
 function retry() {
     if (IAScore === maxJugadas || PlayerScore === maxJugadas) {
         if (IAScore === maxJugadas) {
+            window.speechSynthesis.speak(mensaje2);
             infoText.innerHTML = 'YOU LOST THE GAME! 😥';
         } else {
+            window.speechSynthesis.speak(mensaje1);
             infoText.innerHTML = 'YOU WIN THE GAME!!! 😄';
         }
         btnRetry.classList.remove('bannerHide');
